@@ -97,7 +97,7 @@ namespace HashTable
                 switch (option)
                 {
                     case 1: SingleWordFrequency(); break;
-                    case 2: MultiWordFrequency(); break;
+                    //case 2: MultiWordFrequency(); break;
                     
 
                 }
@@ -122,32 +122,7 @@ namespace HashTable
             Console.WriteLine("2nd index console Value is " + hash2);
 
         }
-        //Multiword Added
-        public void MultiWordFrequency() {
-            int count = 0;
-            String para = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
-            String[] text = para.Split(' ');
-            MyMapNode<String, String> hashpara = new MyMapNode<string, string>(5);
-            foreach (String texts in text)
-            {
-
-                Console.WriteLine("\nPosition= "+ Convert.ToString(count)+ " word"+count+"= "+ texts + "\n");
-                hashpara.Add(Convert.ToString(count), texts);
-                count++;
-
-            }
-            Console.WriteLine("value First index position is " + hashpara.Get("1"));
-            Console.WriteLine("value Second index position is " + hashpara.Get("2"));
-            Console.WriteLine("value Third index position is " + hashpara.Get("3"));
-            Console.WriteLine("value Enter the position(key) to remove the value");
-            String remove_key = Convert.ToString(Console.ReadLine());
-            hashpara.Remove(remove_key);
-            Console.WriteLine("Removed Successfully");
-            Console.WriteLine("value in index position " + remove_key + " is " + hashpara.Get(remove_key));
-
-
-
-        }
+        
 
 
 
