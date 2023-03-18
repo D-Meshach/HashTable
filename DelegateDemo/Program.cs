@@ -17,7 +17,7 @@ namespace HashTable
             Console.WriteLine("Welcome to Hash Table");
             
 
-            //inputs inn = new inputs();
+            inputs inn = new inputs();
             
         }
         
