@@ -140,7 +140,11 @@ namespace HashTable
             Console.WriteLine("value First index position is " + hashpara.Get("1"));
             Console.WriteLine("value Second index position is " + hashpara.Get("2"));
             Console.WriteLine("value Third index position is " + hashpara.Get("3"));
-            
+            Console.WriteLine("value Enter the position(key) to remove the value");
+            String remove_key = Convert.ToString(Console.ReadLine());
+            hashpara.Remove(remove_key);
+            Console.WriteLine("Removed Successfully");
+            Console.WriteLine("value in index position " + remove_key + " is " + hashpara.Get(remove_key));
 
 
 
